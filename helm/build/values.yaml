@@ -1,0 +1,15 @@
+app:
+  name: loadtest31-poi-map-app
+  namespace: loadtest31
+  cluster: .apps.j0i9yf30.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-atl/loadtest31-frontend
+  org: rhdh-atl
+  name: loadtest31-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: loadtest31/poi-map-app
+  tag: latest
